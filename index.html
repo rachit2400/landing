@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <title>Video Zone</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/et-lineicon.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,400italic,500italic,700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+        <div class="animationload">
+            <div class="loader">
+                Loading...
+            </div>
+        </div> 
+
+		<section id="home">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <div id="countdown_dashboard" class="home-main container">
+                        <div class="row">
+                            <div class="logo">
+                                <p style="font-size: 30px;" id="head">KUCH HONE WALA HAI KYA??</p>
+                                <p id="subhead">ARE YOU EXCITEDDDDD?????????????</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="dash days_dash">
+                                <a href="error.html" target="blank" id="change1" class="dash_title"><span id="vid1">Yaha Ye Photo Kyu Lagi Hai?</span></a>
+                                <img src="./images/img (2).jpg" width="80%" alt="">
+                            </div>
+                            <div class="dash3 days_dash">
+                                <p id="demo"></p>
+                            </div>
+                            <div class="dash seconds_dash">
+                                <a href="error.html" target="blank" id="change2" class="dash_title"><span id="vid2">Aur Ye Ladki Kaun Hai?</span></a>
+                                <img src="./images/img2.png" width="40%" alt="">
+                            </div>
+                        </div>
+                        <p id="demo2"></p>
+                        <a href="" id="gifts" target="blank"></a>
+                    </div> <!-- END COUNTDOWN -->
+                </div> <!-- LARGE HEADER -->
+            </div> <!-- END CONTENT -->
+        </section>
+            
+        <!-- JAVASCRIPTS -->
+        <script>
+            var countDownDate = new Date("Jun 22, 2021 23:47:00").getTime();
+            var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "❤️❤️❤️❤️❤️A VERY HAPPY BIRTHDAY TO YOU!😍😍😍😍 MY CUTE GF!!😍😍😍😍😍😍😍!!!!❤️❤️❤️❤️❤️ LOVE YOUUUUUUUUUUUUUUUUUUUUU SOOOO MUCHHHH!!😍😍😍";
+            document.getElementById("head").innerHTML = "🎂Happy Birthday Videos🎂";
+            document.getElementById("subhead").innerHTML = "Welcome to the Video Zone! Here are 2 magical videos especially prepared for you. Handmade by me! So enjoyyyy....!!";
+            document.getElementById("vid1").innerHTML = "Go to Video 1";
+            document.getElementById("vid2").innerHTML = "Go to Video 2";
+            document.getElementById("demo2").innerHTML = "Please Proceed Further Only After Watching Both The Videos!";
+            document.getElementById("gifts").innerHTML = "Are You Ready To Receive Your Virtual Gifts? Click Me!";
+            document.getElementById("gifts").href = "https://rachit2400.github.io/main/";
+            document.getElementById("change1").href = "https://drive.google.com/file/d/104sz6414ArFJ_EQK15Riiy2JtkbXIiYV/view?usp=drivesdk";
+            document.getElementById("change2").href = "https://drive.google.com/file/d/10AP9BzFF3Cs3OVO0--3bugQyeBggNG_t/view?usp=drivesdk";
+            }
+            }, 1000);
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/jquery.lwtCountdown-1.0.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/animated.js"></script>
+	</body>
+</html>
