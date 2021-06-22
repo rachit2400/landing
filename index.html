@@ -53,7 +53,7 @@
             
         <!-- JAVASCRIPTS -->
         <script>
-            var countDownDate = new Date("Jun 23, 2021 00:52:00").getTime();
+            var countDownDate = new Date("Jun 29, 2021 00:00:00").getTime();
             var x = setInterval(function() {
 
             // Get today's date and time
@@ -69,8 +69,8 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+            document.getElementById("demo").innerHTML = days + " days " + hours + " hours "
+            + minutes + " month " + seconds + " seconds ";
 
             // If the count down is finished, write some text
             if (distance < 0) {
